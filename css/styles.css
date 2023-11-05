@@ -1,0 +1,169 @@
+:root{
+    --skin-color: green;
+    --border-style: 5px solid black;
+  }
+  body{
+    background: linear-gradient(200deg, #333, #000);
+    height: 100vh;
+  }
+  .yoshi{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    position: relative;
+  }
+  .head{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+  }
+  .chin{
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(200deg, green 35%, white 65%);
+    position: absolute;
+    z-index: 2;
+    border : var(--border-style);
+    border-radius: 50%;
+    translate: 180px 50px;
+  }
+  .mouth{
+      width: 65px;
+      height: 100px;
+      background: white;
+      border: var(--border-style);
+      border-radius: 50%;
+      border-right: 0px;
+      border-top: 0px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      translate: 285px 166px;
+      z-index: 3;
+      rotate: 48deg;
+  }
+  .tongue{
+      width: 65%;
+      height: 65%;
+      background: red;
+      border: var(--border-style);
+      border-radius: 50%;
+      translate: -3px -6px;
+      rotate: 5deg;
+  }
+  .hair-container{
+    width: 100px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .hair{
+    width: 50px;
+    height: 50px;
+    background-color: #ff4f00ed;
+    border : var(--border-style);
+    rotate:40deg;
+    translate: -50px -60px;
+  }
+  .nose-container{
+    width: 250px;
+    height: 220px;
+    translate: 165px 53px;
+    z-index: 5;
+    /*position: relative;
+    */
+  }
+  .hair-container :nth-child(1){
+    translate: -60px -40px;
+    rotate: 15deg;
+  }
+  .hair-container :nth-child(2){
+    translate: -50px -26px;
+    rotate: 59deg;  
+  }
+  .hair-container :nth-child(3){
+    translate: -93px -28px;
+    rotate: 97deg;
+  }
+  .nose{
+    --size : 100%;
+    width: var(--size);
+    height: var(--size);
+    border: var(--border-style);
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .holes{
+   width: 50%;
+   height: 20%;
+   display: flex;
+   translate: 0px 35px;
+  }
+  .hole{
+    width: 30%;
+    height: 45%;
+    border-top: var(--border-style);
+    border-radius: 50%;
+  }
+  .left-hole{
+    rotate: 30deg;
+  }
+  .right-hole{
+    rotate: -15deg;
+    translate: 15px 0px;
+  }
+  .eyes{
+    width: 300px;
+    height: 250px;
+    align-self: start;
+    display: flex;
+    z-index: 3;
+  }
+  .eye{
+    background-color: var(--skin-color);
+    width: 125px;
+    height: 200px;
+    border:var(--border-style);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .eye-right{
+    translate: -30px 25px;
+  }
+  .retina{
+    background-color: white;
+    width: 90px;
+    height: 140px;
+    border: var(--border-style);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: -9px 0px;
+  }
+  .pupila{
+    background-color: black;
+    width: 30px;
+    height: 60px;
+    border: var(--border-style);
+    border-radius: 50%;
+    translate: 0px 0px;
+    transition: all 0.5s;
+    display : flex;
+    justify-content : end;
+    align-items : center;
+  }
+  
+  .shine{
+    background-color: white;
+    width: 15px;
+    height: 30px;
+    border: var(--border-style);
+    border-radius: 50%;
+  }
